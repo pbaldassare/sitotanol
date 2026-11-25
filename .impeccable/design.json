@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T07:29:55.839615+00:00",
+  "title": "Design System: TANOL Media",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Carta",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Superficie",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Inchiostro",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Inchiostro 2",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Filetto",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Filetto forte",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "guide": {
+        "role": "secondary",
+        "displayName": "Guida",
+        "tonalRamp": [
+          "#172554",
+          "#1E3A8A",
+          "#1D4ED8",
+          "#2563EB",
+          "#60A5FA",
+          "#93C5FD",
+          "#BFDBFE",
+          "#EFF6FF"
+        ]
+      },
+      "band-guide": {
+        "role": "secondary",
+        "displayName": "Guida su scuro",
+        "tonalRamp": [
+          "#172554",
+          "#1E3A8A",
+          "#1D4ED8",
+          "#2563EB",
+          "#60A5FA",
+          "#93C5FD",
+          "#BFDBFE",
+          "#EFF6FF"
+        ]
+      },
+      "band-ink-2": {
+        "role": "neutral",
+        "displayName": "Testo secondario su scuro",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Azione",
+        "tonalRamp": [
+          "#431407",
+          "#7C2D12",
+          "#C2410C",
+          "#EA580C",
+          "#F97316",
+          "#FDBA74",
+          "#FED7AA",
+          "#FFF7ED"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Azione hover",
+        "tonalRamp": [
+          "#431407",
+          "#7C2D12",
+          "#C2410C",
+          "#EA580C",
+          "#F97316",
+          "#FDBA74",
+          "#FED7AA",
+          "#FFF7ED"
+        ]
+      },
+      "placeholder-bg": {
+        "role": "tertiary",
+        "displayName": "Segnaposto",
+        "tonalRamp": [
+          "#451A03",
+          "#78350F",
+          "#B45309",
+          "#D97706",
+          "#FBBF24",
+          "#FDE68A",
+          "#FEF3C7",
+          "#FFFBEB"
+        ]
+      },
+      "placeholder-tag": {
+        "role": "tertiary",
+        "displayName": "Etichetta segnaposto",
+        "tonalRamp": [
+          "#451A03",
+          "#78350F",
+          "#B45309",
+          "#D97706",
+          "#FBBF24",
+          "#FDE68A",
+          "#FEF3C7",
+          "#FFFBEB"
+        ]
+      },
+      "placeholder-tag-ink": {
+        "role": "tertiary",
+        "displayName": "Testo segnaposto",
+        "tonalRamp": [
+          "#451A03",
+          "#78350F",
+          "#B45309",
+          "#D97706",
+          "#FBBF24",
+          "#FDE68A",
+          "#FEF3C7",
+          "#FFFBEB"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Errore",
+        "tonalRamp": [
+          "#450A0A",
+          "#7F1D1D",
+          "#B91C1C",
+          "#DC2626",
+          "#F87171",
+          "#FCA5A5",
+          "#FECACA",
+          "#FEF2F2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Un h1 per pagina e il titolo di chiusura."
+      },
+      "section": {
+        "displayName": "Sezione",
+        "purpose": "Titoli di sezione."
+      },
+      "item": {
+        "displayName": "Voce",
+        "purpose": "Nomi di prodotto e voci di elenco."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Frase sotto i titoli."
+      },
+      "body": {
+        "displayName": "Testo",
+        "purpose": "Corpo."
+      },
+      "label": {
+        "displayName": "Etichetta",
+        "purpose": "Settori, etichette, didascalie."
+      }
+    },
+    "shadows": [
+      {
+        "name": "frame",
+        "value": "0 1px 2px rgba(15,23,42,.04), 0 12px 32px -12px rgba(15,23,42,.14)",
+        "purpose": "Cornici delle schermate."
+      },
+      {
+        "name": "chat-on-band",
+        "value": "0 24px 48px -20px rgba(0,0,0,.5)",
+        "purpose": "Chat dell'esempio IA sulla fascia scura."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Tutte le transizioni."
+      },
+      {
+        "name": "reveal",
+        "value": "420ms, translateY(14px), stagger 60ms",
+        "purpose": "Comparsa allo scroll, solo senza riduzione del movimento."
+      },
+      {
+        "name": "answer-delay",
+        "value": "500ms",
+        "purpose": "La risposta dell'esempio IA compare dopo la domanda."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "480px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "nav",
+        "value": "1152px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Pulsante azione",
+      "kind": "button",
+      "refersTo": "button-action",
+      "description": "Solo per «Prenota una call».",
+      "html": "<button class=\"ds-btn-action\">Prenota una call <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-action { display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:12px 22px; border-radius:999px; font:700 1rem/1.2 'Plus Jakarta Sans',system-ui,sans-serif; border:0; cursor:pointer; transition:background-color .2s cubic-bezier(.16,1,.3,1), border-color .2s; } .ds-btn-action svg { transition: transform .25s cubic-bezier(.16,1,.3,1); } .ds-btn-action:hover svg { transform: translateX(3px); } .ds-btn-action:focus-visible { outline:2px solid #2563EB; outline-offset:3px; } .ds-btn-action { background:#EA580C; color:#000; } .ds-btn-action:hover { background:#F97316; }"
+    },
+    {
+      "name": "Pulsante inchiostro",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Demo e invio del form.",
+      "html": "<button class=\"ds-btn-ink\">Richiedi una demo <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-ink { display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:12px 22px; border-radius:999px; font:700 1rem/1.2 'Plus Jakarta Sans',system-ui,sans-serif; border:0; cursor:pointer; transition:background-color .2s cubic-bezier(.16,1,.3,1), border-color .2s; } .ds-btn-ink svg { transition: transform .25s cubic-bezier(.16,1,.3,1); } .ds-btn-ink:hover svg { transform: translateX(3px); } .ds-btn-ink:focus-visible { outline:2px solid #2563EB; outline-offset:3px; } .ds-btn-ink { background:#1E293B; color:#F8FAFC; } .ds-btn-ink:hover { background:#0F172A; }"
+    },
+    {
+      "name": "Pulsante fantasma",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Azione secondaria accanto all'arancione.",
+      "html": "<button class=\"ds-btn-ghost\">Guarda i software</button>",
+      "css": ".ds-btn-ghost { display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:12px 22px; border-radius:999px; font:700 1rem/1.2 'Plus Jakarta Sans',system-ui,sans-serif; border:0; cursor:pointer; transition:background-color .2s cubic-bezier(.16,1,.3,1), border-color .2s; } .ds-btn-ghost svg { transition: transform .25s cubic-bezier(.16,1,.3,1); } .ds-btn-ghost:hover svg { transform: translateX(3px); } .ds-btn-ghost:focus-visible { outline:2px solid #2563EB; outline-offset:3px; } .ds-btn-ghost { background:#fff; color:#1E293B; border:1.5px solid #CBD5E1; } .ds-btn-ghost:hover { border-color:#1E293B; }"
+    },
+    {
+      "name": "Chip filtro",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Filtro per settore nella pagina Software.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"true\">Tutti</button><button class=\"ds-chip\" aria-pressed=\"false\">Alimentare</button>",
+      "css": ".ds-chip { min-height:44px; padding:8px 16px; margin-right:8px; border-radius:999px; border:1px solid #CBD5E1; background:#fff; color:#475569; font:600 .9375rem 'Plus Jakarta Sans',system-ui,sans-serif; cursor:pointer; } .ds-chip:hover { border-color:#1E293B; color:#1E293B; } .ds-chip[aria-pressed='true'] { background:#1E293B; border-color:#1E293B; color:#F8FAFC; } .ds-chip:focus-visible { outline:2px solid #2563EB; outline-offset:3px; }"
+    },
+    {
+      "name": "Campo",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo del form contatti.",
+      "html": "<label class=\"ds-label\" for=\"ds-n\">Nome *</label><input id=\"ds-n\" class=\"ds-input\">",
+      "css": ".ds-label { display:block; margin-bottom:6px; font:700 .9375rem 'Plus Jakarta Sans',system-ui,sans-serif; color:#1E293B; } .ds-input { width:100%; min-height:48px; padding:12px 14px; font:1rem 'Plus Jakarta Sans',system-ui,sans-serif; color:#1E293B; background:#fff; border:1.5px solid #CBD5E1; border-radius:10px; } .ds-input:hover { border-color:#94A3B8; } .ds-input:focus-visible { outline:none; border-color:#2563EB; box-shadow:0 0 0 3px #BFDBFE; }"
+    },
+    {
+      "name": "Indice prodotti",
+      "kind": "custom",
+      "description": "Elenco a filetti dell'apertura della Home.",
+      "html": "<ol class=\"ds-index\"><li><a href=\"#\"><b>Sofabis</b><span>Finanza agevolata</span></a></li><li><a href=\"#\"><b>Pronto</b><span>Assistenza clienti</span></a></li></ol>",
+      "css": ".ds-index { list-style:none; margin:0; padding:0; border-top:1.5px solid #1E293B; font-family:'Plus Jakarta Sans',system-ui,sans-serif; } .ds-index li { border-bottom:1px solid #E2E8F0; } .ds-index a { display:flex; justify-content:space-between; align-items:baseline; min-height:48px; padding:10px 0; color:#1E293B; text-decoration:none; transition:padding .3s cubic-bezier(.16,1,.3,1), color .2s; } .ds-index b { font-size:1.3125rem; font-weight:700; letter-spacing:-.02em; } .ds-index span { font-size:.875rem; color:#475569; } .ds-index a:hover { padding-left:8px; color:#2563EB; }"
+    },
+    {
+      "name": "Segnaposto",
+      "kind": "custom",
+      "description": "Contenuto mancante, da sostituire prima del lancio.",
+      "html": "<div class=\"ds-ph\"><span class=\"ds-ph-tag\">Da completare</span><span>Schermate reali dei prodotti</span></div>",
+      "css": ".ds-ph { display:flex; flex-direction:column; gap:10px; padding:24px; border:1.5px dashed #94A3B8; border-radius:12px; background:#FFFBEB; font:600 1rem 'Plus Jakarta Sans',system-ui,sans-serif; color:#1E293B; } .ds-ph-tag { align-self:flex-start; padding:4px 10px; border-radius:999px; background:#FDE68A; color:#78350F; font-size:.75rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Il catalogo è la prova",
+    "overview": "Un sito editoriale chiaro, dove i titoli fanno il lavoro e il prodotto si mostra invece di essere descritto. Fondo carta fredda, inchiostro ardesia, filetti sottili al posto delle scatole, e un solo colore che grida: l'arancione del pulsante «Prenota una call». Chi arriva deve capire in dieci secondi che TANOL ha nove software veri e un'IA che resta in azienda.\n\nLa struttura è tipografica: elenchi con filetto spesso in testa e filetti sottili tra le righe, titoli Plus Jakarta Sans 800 molto stretti, testo secondario ardesia. L'unico campo di colore pieno è la fascia IA, dove l'inchiostro diventa fondo e il confine tratteggiato «La tua azienda» mostra i dati che non escono.",
+    "keyCharacteristics": [
+      "Titoli enormi a peso 800, tracking negativo, punto finale riavvicinato alla parola.",
+      "Elenchi a filetti (indice prodotti, catalogo, percorso, servizi) invece di griglie di card.",
+      "Arancione riservato a un'unica azione; blu solo per link, settori e dettagli.",
+      "Una fascia scura per pagina al massimo, sempre per l'IA.",
+      "Segnaposto gialli tratteggiati e ben visibili per tutto ciò che manca."
+    ],
+    "rules": [
+      {
+        "name": "The One Orange Rule",
+        "body": "L'arancione compare solo su «Prenota una call» e sue traduzioni. «Richiedi una demo» e «Invia» usano il pulsante inchiostro.",
+        "section": "colors"
+      },
+      {
+        "name": "The Visible Gap Rule",
+        "body": "Il contenuto mancante si mostra con il segnaposto giallo (#FFFBEB, etichetta #FDE68A su #78350F), mai con dati inventati. Il giallo esiste solo per questo e sparisce prima del lancio.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tight Stop Rule",
+        "body": "Nei titoli display e di sezione il punto e la virgola finali sono avvolti in `.punct` (margin-left -0,06em): a peso 800 il punto di Plus Jakarta resta altrimenti staccato.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Kicker Rule",
+        "body": "Niente etichette sopra i titoli. Il settore di un prodotto va sotto il nome, non sopra.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** usare elenchi a filetti per prodotti, passi e servizi.",
+      "**Do** mostrare i dati societari reali dove serve fiducia.",
+      "**Do** marcare con il segnaposto giallo ogni contenuto mancante.",
+      "**Do** far comparire i blocchi allo scroll con 420ms e scaglionamento di 60ms, solo se il movimento non è ridotto."
+    ],
+    "donts": [
+      "**Don't** usare l'arancione per qualunque cosa che non sia prenotare una call.",
+      "**Don't** costruire sezioni con card uguali con icona, titolo e testo.",
+      "**Don't** mettere etichette o numeri di sezione sopra i titoli; i numeri vanno solo dove c'è una sequenza vera (percorso, fasi).",
+      "**Don't** usare vetro o sfocatura fuori dalla barra di navigazione.",
+      "**Don't** inventare schermate, clienti, numeri o prezzi."
+    ]
+  }
+}
