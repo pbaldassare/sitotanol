@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { ArrowUp, Menu, X } from 'lucide-react';
 import { href, locales, switchPath, type Locale } from '@/lib/i18n';
 import type { Dict } from '@/content/it';
 
@@ -12,6 +12,25 @@ const navKeys = ['software', 'ai', 'communication', 'about', 'contact'] as const
 export default function Header({ lang, nav, cta }: { lang: Locale; nav: Dict['nav']; cta: string }) {
   const path = usePathname();
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [far, setFar] = useState(false);
+
+  // Landing behaviour: the bar slides away while scrolling down and returns on the way up.
+  useEffect(() => {
+    let last = scrollY;
+    let frame = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const y = scrollY;
+        if (Math.abs(y - last) > 6) setHidden(y > last && y > 120);
+        setFar(y > 900);
+        last = y;
+      });
+    };
+    addEventListener('scroll', onScroll, { passive: true });
+    return () => removeEventListener('scroll', onScroll);
+  }, []);
 
   useEffect(() => setOpen(false), [path]);
   // Remembers the language so the root redirect skips browser detection on later visits.
@@ -38,7 +57,8 @@ export default function Header({ lang, nav, cta }: { lang: Locale; nav: Dict['na
   );
 
   return (
-    <header className="site-header" data-open={open || undefined}>
+    <>
+    <header className="site-header" data-open={open || undefined} data-hidden={(hidden && !open) || undefined}>
       <a className="skip" href="#main">{nav.skip}</a>
       <div className="wrap header-row">
         <Link href={href(lang)} className="wordmark" aria-label={nav.home}>
@@ -70,5 +90,17 @@ export default function Header({ lang, nav, cta }: { lang: Locale; nav: Dict['na
         </button>
       </div>
     </header>
+    <button
+      type="button"
+      className="to-top"
+      data-show={far || undefined}
+      tabIndex={far ? 0 : -1}
+      aria-hidden={!far}
+      onClick={() => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })}
+    >
+      <ArrowUp aria-hidden size={20} />
+      <span className="sr-only">{nav.top}</span>
+    </button>
+    </>
   );
 }

@@ -9,6 +9,7 @@ import Perimeter from '@/components/Perimeter';
 import Registry from '@/components/Registry';
 import Closing from '@/components/Closing';
 import ContactForm from '@/components/ContactForm';
+import Photo from '@/components/Photo';
 import { tight } from '@/components/Tight';
 import { getDict, hasLocale, href, locales, pageMeta, type Locale, type RouteKey } from '@/lib/i18n';
 import type { Dict } from '@/content/it';
@@ -78,6 +79,7 @@ function AiPage({ lang, t }: P) {
 
       <section className="ai ai-page" aria-labelledby="inhouse-title">
         <div className="wrap">
+          <Photo name="servers" className="photo-banner photo-band" sizes="100vw" />
           <div className="split">
             <div data-reveal>
               <h2 id="inhouse-title" className="h-section">{tight(a.inhouse.title)}</h2>
@@ -100,6 +102,7 @@ function AiPage({ lang, t }: P) {
           <div data-reveal>
             <h2 id="training-title" className="h-section">{tight(a.training.title)}</h2>
             <p className="lead">{a.training.text}</p>
+            <Photo name="training" className="photo-wide photo-gap" />
           </div>
           <div data-reveal style={i(1)}>
             <h3 className="h-small">{a.training.formatsTitle}</h3>
@@ -141,6 +144,7 @@ function CommunicationPage({ lang, t }: P) {
   return (
     <>
       <PageHead title={c.title} lead={c.lead} />
+      <div className="wrap section-tight"><Photo name="studio" className="photo-banner" sizes="100vw" /></div>
       <section className="wrap section-tight" aria-label={c.title}>
         <ul className="services">
           {c.services.map((s, n) => (
@@ -165,6 +169,7 @@ function HowPage({ lang, t }: P) {
   return (
     <>
       <PageHead title={h.title} lead={h.lead} />
+      <div className="wrap section-tight"><Photo name="planning" className="photo-banner" sizes="100vw" /></div>
       <section className="wrap section-tight" aria-label={h.title}>
         <ol className="path path-big">
           {h.steps.map((s, n) => (
@@ -185,6 +190,7 @@ function AboutPage({ lang, t }: P) {
   return (
     <>
       <PageHead title={a.title} lead={a.lead} />
+      <div className="wrap section-tight"><Photo name="prague" className="photo-banner" sizes="100vw" /></div>
       <section className="wrap section-tight" aria-label={a.title}>
         <ul className="pillars pillars-page">
           {t.pillars.map((p, n) => {
@@ -225,6 +231,7 @@ function ContactPage({ lang, t }: P) {
           <ContactForm f={c.form} lang={lang} privacyHref={href(lang, 'privacy')} />
         </div>
         <aside className="contact-side">
+          <Photo name="call" className="photo-wide" sizes="(min-width: 1024px) 40vw, 100vw" />
           <div>
             <h2 className="h-small"><CalendarDays aria-hidden size={18} /> {c.bookTitle}</h2>
             <Placeholder tag={t.placeholder} label={c.calendarPlaceholder} className="block-ph block-ph-tall" />

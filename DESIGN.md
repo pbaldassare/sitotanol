@@ -20,30 +20,30 @@ colors:
 typography:
   display:
     fontFamily: "Plus Jakarta Sans, system-ui, sans-serif"
-    fontSize: "clamp(2.5rem, 1.4rem + 4.6vw, 5.5rem)"
+    fontSize: "clamp(2.125rem, 1.3rem + 3vw, 4rem)"
     fontWeight: 800
-    lineHeight: 1.02
+    lineHeight: 1.05
     letterSpacing: "-0.035em"
   section:
     fontFamily: "Plus Jakarta Sans, system-ui, sans-serif"
-    fontSize: "clamp(2rem, 1.3rem + 2.8vw, 3.75rem)"
+    fontSize: "clamp(1.75rem, 1.2rem + 1.8vw, 2.75rem)"
     fontWeight: 800
     lineHeight: 1.05
     letterSpacing: "-0.03em"
   item:
     fontFamily: "Plus Jakarta Sans, system-ui, sans-serif"
-    fontSize: "1.5rem"
+    fontSize: "1.25rem"
     fontWeight: 800
     lineHeight: 1.2
     letterSpacing: "-0.02em"
   lead:
     fontFamily: "Plus Jakarta Sans, system-ui, sans-serif"
-    fontSize: "clamp(1.125rem, 1rem + 0.4vw, 1.3125rem)"
+    fontSize: "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)"
     fontWeight: 400
     lineHeight: 1.6
   body:
     fontFamily: "Plus Jakarta Sans, system-ui, sans-serif"
-    fontSize: "1.0625rem"
+    fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
@@ -54,6 +54,7 @@ typography:
 rounded:
   field: "10px"
   card: "14px"
+  photo: "20px"
   frame: "20px"
   pill: "999px"
 spacing:
@@ -119,6 +120,8 @@ La struttura è tipografica: elenchi con filetto spesso in testa e filetti sotti
 - Arancione riservato a un'unica azione; blu solo per link, settori e dettagli.
 - Una fascia scura per pagina al massimo, sempre per l'IA.
 - Segnaposto gialli tratteggiati e ben visibili per tutto ciò che manca.
+- Foto vere (stock Unsplash finché non arrivano quelle aziendali) in riquadri da 20px, una per sezione, mai come sfondo sotto il testo.
+- Movimento legato allo scroll: avanza scendendo e si riavvolge risalendo.
 
 ## Colors
 
@@ -145,15 +148,17 @@ La struttura è tipografica: elenchi con filetto spesso in testa e filetti sotti
 **Font:** Plus Jakarta Sans (variabile, subset latin e latin-ext per il ceco), servito in locale da next/font.
 
 ### Hierarchy
-- **Display** (800, fino a 5,5rem, interlinea 1,02, -0,035em): un solo h1 per pagina e il titolo di chiusura.
-- **Section** (800, fino a 3,75rem, -0,03em): titoli di sezione.
-- **Item** (800, 1,5rem, -0,02em): nomi di prodotto, voci di elenco.
-- **Lead** (400, fino a 1,31rem, inchiostro 2, max 46-52ch): frase sotto i titoli.
-- **Body** (400, 1,0625rem, interlinea 1,6).
+- **Display** (800, fino a 4rem, interlinea 1,05, -0,035em): un solo h1 per pagina e il titolo di chiusura.
+- **Section** (800, fino a 2,75rem, -0,03em): titoli di sezione.
+- **Item** (800, 1,25rem, -0,02em): nomi di prodotto, voci di elenco.
+- **Lead** (400, fino a 1,19rem, inchiostro 2, max 46-52ch): frase sotto i titoli.
+- **Body** (400, 1rem, interlinea 1,6).
 - **Label** (600-700, 0,875rem): settori, etichette di campo, didascalie.
 
 ### Named Rules
 **The Tight Stop Rule.** Nei titoli display e di sezione il punto e la virgola finali sono avvolti in `.punct` (margin-left -0,06em): a peso 800 il punto di Plus Jakarta resta altrimenti staccato.
+
+**The Photo Frame Rule.** Ogni foto sta in un riquadro `.photo` con raggio 20px e alt vuoto (decorativa); l'apertura sovrappone l'indice dei software in una scheda bianca. Fonti in `static/img-sources.txt`.
 
 **The No Kicker Rule.** Niente etichette sopra i titoli. Il settore di un prodotto va sotto il nome, non sopra.
 
@@ -167,7 +172,7 @@ Profondità quasi assente: la struttura la danno i filetti. Un'unica ombra morbi
 
 ## Shapes
 
-Pillole per pulsanti, chip e settori; 10px per i campi; 14px per riquadri e cornici; 20px per il confine tratteggiato IA. Filetto spesso 1,5px in inchiostro in testa agli elenchi, filetti da 1px tra le righe.
+Pillole per pulsanti, chip e settori; 10px per i campi; 14px per riquadri e cornici; 16px per la scheda indice sopra la foto; 20px per foto e confine tratteggiato IA. Filetto spesso 1,5px in inchiostro in testa agli elenchi, filetti da 1px tra le righe.
 
 ## Components
 
@@ -197,7 +202,8 @@ Il confine tratteggiato «La tua azienda · i tuoi server»: fonti a sinistra, f
 - **Do** usare elenchi a filetti per prodotti, passi e servizi.
 - **Do** mostrare i dati societari reali dove serve fiducia.
 - **Do** marcare con il segnaposto giallo ogni contenuto mancante.
-- **Do** far comparire i blocchi allo scroll con 420ms e scaglionamento di 60ms, solo se il movimento non è ridotto.
+- **Do** legare il movimento allo scroll (`animation-timeline: view()`): blocchi che salgono, foto che si aprono da una maschera, domanda e risposta dell'esempio IA in sequenza; tutto si riavvolge risalendo. Senza supporto, comparsa singola via IntersectionObserver; con movimento ridotto, niente.
+- **Do** nascondere la barra di navigazione scendendo e mostrarla risalendo, con il pulsante «torna su» dopo 900px.
 
 ### Don't:
 - **Don't** usare l'arancione per qualunque cosa che non sia prenotare una call.

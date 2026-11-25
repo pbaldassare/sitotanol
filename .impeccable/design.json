@@ -260,14 +260,24 @@
         "purpose": "Tutte le transizioni."
       },
       {
-        "name": "reveal",
-        "value": "420ms, translateY(14px), stagger 60ms",
-        "purpose": "Comparsa allo scroll, solo senza riduzione del movimento."
+        "name": "scroll-rise",
+        "value": "animation-timeline: view(); range entry 5% cover 28%; translateY(40px)→0",
+        "purpose": "Blocchi che salgono scendendo e si riavvolgono risalendo."
       },
       {
-        "name": "answer-delay",
-        "value": "500ms",
-        "purpose": "La risposta dell'esempio IA compare dopo la domanda."
+        "name": "scroll-unmask",
+        "value": "clip-path inset(12% 8%)→0, scale 1.18→1; range entry 0% cover 45%",
+        "purpose": "Foto che si aprono allo scroll."
+      },
+      {
+        "name": "perimeter-sequence",
+        "value": "view-timeline --perimeter: fonti, domanda (cover 25-38%), risposta (38-50%), citazione (48-56%)",
+        "purpose": "Momento principale: i dati restano dentro il confine."
+      },
+      {
+        "name": "header-autohide",
+        "value": "translateY(-100%) in 320ms scendendo oltre 120px",
+        "purpose": "La barra lascia spazio al contenuto e torna risalendo."
       }
     ],
     "breakpoints": [
@@ -381,7 +391,8 @@
       "**Do** usare elenchi a filetti per prodotti, passi e servizi.",
       "**Do** mostrare i dati societari reali dove serve fiducia.",
       "**Do** marcare con il segnaposto giallo ogni contenuto mancante.",
-      "**Do** far comparire i blocchi allo scroll con 420ms e scaglionamento di 60ms, solo se il movimento non è ridotto."
+      "**Do** legare il movimento allo scroll (`animation-timeline: view()`): blocchi che salgono, foto che si aprono da una maschera, domanda e risposta dell'esempio IA in sequenza; tutto si riavvolge risalendo. Senza supporto, comparsa singola via IntersectionObserver; con movimento ridotto, niente.",
+      "**Do** nascondere la barra di navigazione scendendo e mostrarla risalendo, con il pulsante «torna su» dopo 900px."
     ],
     "donts": [
       "**Don't** usare l'arancione per qualunque cosa che non sia prenotare una call.",

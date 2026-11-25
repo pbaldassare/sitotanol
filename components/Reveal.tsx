@@ -7,7 +7,8 @@ import { useEffect } from 'react';
 export default function Reveal() {
   const path = usePathname();
   useEffect(() => {
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Browsers with scroll-driven animations run the reversible CSS version; this one-shot observer is the fallback.
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || CSS.supports('animation-timeline: view()')) return;
     const els = document.querySelectorAll<HTMLElement>('[data-reveal]:not(.is-in)');
     document.documentElement.classList.add('reveal-on');
     const io = new IntersectionObserver(

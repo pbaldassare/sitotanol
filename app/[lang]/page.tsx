@@ -7,6 +7,7 @@ import Placeholder from '@/components/Placeholder';
 import Perimeter from '@/components/Perimeter';
 import Registry from '@/components/Registry';
 import Closing from '@/components/Closing';
+import Photo from '@/components/Photo';
 import { tight } from '@/components/Tight';
 import { getDict, hasLocale, href, pageMeta, products } from '@/lib/i18n';
 
@@ -55,30 +56,33 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
           </div>
         </div>
 
-        <nav className="index" aria-labelledby="index-title">
-          <div className="index-head">
-            <h2 id="index-title">{t.hero.indexCaption}</h2>
-            <Link href={href(lang, 'software')} className="link">
-              {t.hero.indexAll} <ArrowUpRight aria-hidden size={16} />
-            </Link>
-          </div>
-          <ol>
-            {products.map((p, n) => (
-              <li key={p.slug} data-reveal style={i(n)}>
-                <Link href={href(lang, 'software', `/${p.slug}`)}>
-                  <span className="index-name">{p.name}</span>
-                  <span className="index-sector">{t.products.items[p.slug].sector}</span>
-                </Link>
-              </li>
-            ))}
-          </ol>
-        </nav>
+        <div className="hero-visual">
+          <Photo name="team" className="hero-photo" priority sizes="(min-width: 1024px) 45vw, 100vw" />
+          <nav className="index index-card" aria-labelledby="index-title">
+            <div className="index-head">
+              <h2 id="index-title">{t.hero.indexCaption}</h2>
+              <Link href={href(lang, 'software')} className="link">
+                {t.hero.indexAll} <ArrowUpRight aria-hidden size={16} />
+              </Link>
+            </div>
+            <ol>
+              {products.map((p) => (
+                <li key={p.slug}>
+                  <Link href={href(lang, 'software', `/${p.slug}`)}>
+                    <span className="index-name">{p.name}</span>
+                    <span className="index-sector">{t.products.items[p.slug].sector}</span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </div>
 
         <ul className="pillars">
           {t.pillars.map((p, n) => {
             const Icon = pillarIcons[n];
             return (
-              <li key={p.title}>
+              <li key={p.title} data-reveal style={i(n)}>
                 <Icon aria-hidden size={20} className="pillar-icon" />
                 <h2>{p.title}</h2>
                 <p>{p.text}</p>
@@ -90,9 +94,12 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
 
       <section className="ai" aria-labelledby="ai-title">
         <div className="wrap">
-          <div className="ai-head" data-reveal>
-            <h2 id="ai-title" className="h-section">{tight(t.ai.title)}</h2>
-            <p className="lead">{t.ai.lead}</p>
+          <div className="ai-intro">
+            <div className="ai-head" data-reveal>
+              <h2 id="ai-title" className="h-section">{tight(t.ai.title)}</h2>
+              <p className="lead">{t.ai.lead}</p>
+            </div>
+            <Photo name="servers" className="photo-wide" />
           </div>
 
           <Perimeter ai={t.ai} />
@@ -125,15 +132,12 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
       </section>
 
       <section className="products wrap" aria-labelledby="products-title">
-        <div className="products-head" data-reveal>
-          <div>
+        <div className="products-head">
+          <div data-reveal>
             <h2 id="products-title" className="h-section">{tight(t.products.title)}</h2>
             <p className="lead">{t.products.lead}</p>
           </div>
-          <div className="frame">
-            <div className="frame-bar" aria-hidden><span /><span /><span /></div>
-            <Placeholder tag={t.placeholder} label={t.products.screensPlaceholder} className="frame-ph" />
-          </div>
+          <Photo name="desk" className="photo-wide" />
         </div>
         <ul className="catalog">
           {products.map((p, n) => {
@@ -150,28 +154,51 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
             );
           })}
         </ul>
+        <Placeholder tag={t.placeholder} label={t.products.screensPlaceholder} className="block-ph" />
       </section>
 
-      <section className="trust" aria-labelledby="trust-title">
-        <div className="wrap trust-grid">
-          <div data-reveal>
-            <h2 id="trust-title" className="h-section">{tight(t.trust.title)}</h2>
-            <p className="lead">{t.trust.lead}</p>
-            <div className="commitments">
-              {t.trust.commitments.map((c) => (
-                <div key={c.title}>
-                  <h3>{c.title}</h3>
-                  <p>{c.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <Registry rows={t.trust.company} />
-          <Placeholder tag={t.placeholder} label={t.trust.casesPlaceholder} className="cases-ph" />
+      <section className="how-teaser wrap" aria-labelledby="how-title">
+        <Photo name="planning" className="photo-tall" />
+        <div>
+          <h2 id="how-title" className="h-section" data-reveal>{t.howPage.title}</h2>
+          <p className="lead" data-reveal>{t.howPage.lead}</p>
+          <ol className="path path-compact">
+            {t.howPage.steps.map((s, n) => (
+              <li key={s.t} data-reveal style={i(n)}>
+                <h3>{s.t}</h3>
+                <p>{s.d}</p>
+              </li>
+            ))}
+          </ol>
+          <Link href={href(lang, 'how')} className="link">
+            {t.howPage.title} <ArrowRight aria-hidden size={16} />
+          </Link>
         </div>
       </section>
 
-      <Closing lang={lang} />
+      <section className="trust" aria-labelledby="trust-title">
+        <div className="wrap">
+          <Photo name="prague" className="photo-banner" sizes="100vw" />
+          <div className="trust-grid">
+            <div data-reveal>
+              <h2 id="trust-title" className="h-section">{tight(t.trust.title)}</h2>
+              <p className="lead">{t.trust.lead}</p>
+              <div className="commitments">
+                {t.trust.commitments.map((c) => (
+                  <div key={c.title}>
+                    <h3>{c.title}</h3>
+                    <p>{c.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <Registry rows={t.trust.company} />
+            <Placeholder tag={t.placeholder} label={t.trust.casesPlaceholder} className="cases-ph" />
+          </div>
+        </div>
+      </section>
+
+      <Closing lang={lang} photo />
     </>
   );
 }

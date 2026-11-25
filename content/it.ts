@@ -26,6 +26,7 @@ const it = {
     close: 'Chiudi',
     language: 'Lingua',
     home: 'TANOL Media, pagina iniziale',
+    top: 'Torna su',
     skip: 'Vai al contenuto',
   },
   cta: { primary: 'Prenota una call', secondary: 'Guarda i software' },

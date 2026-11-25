@@ -29,6 +29,7 @@ const cs: Dict = {
     close: 'Zavřít',
     language: 'Jazyk',
     home: 'TANOL Media, úvodní stránka',
+    top: 'Zpět nahoru',
     skip: 'Přejít na obsah',
   },
   cta: { primary: 'Rezervovat hovor', secondary: 'Prohlédnout software' },

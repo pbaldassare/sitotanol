@@ -28,6 +28,7 @@ const en: Dict = {
     close: 'Close',
     language: 'Language',
     home: 'TANOL Media, home page',
+    top: 'Back to top',
     skip: 'Skip to content',
   },
   cta: { primary: 'Book a call', secondary: 'See the software' },
