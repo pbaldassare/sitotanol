@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Next.js (App Router), scelto dall'utente. Contenuti in file per lingua, nessun page builder a pagamento. Dominio e hosting da definire.
+Next.js (App Router), scelto dall'utente, in export statico (cartella `dist`) su Cloudflare Pages: niente codice lato server. Lingua alla prima visita e indirizzi senza lingua gestiti da `public/index.html` e `static/404.html`. Il form contatti invia dal browser a `NEXT_PUBLIC_CONTACT_ENDPOINT` (servizio in UE da scegliere). Contenuti in file per lingua, nessun page builder a pagamento. Dominio da definire (`NEXT_PUBLIC_SITE_URL`).
 
 ## Users
 

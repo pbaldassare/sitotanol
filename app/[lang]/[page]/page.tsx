@@ -41,19 +41,18 @@ export async function generateMetadata({ params }: PageProps<'/[lang]/[page]'>):
 
 const i = (n: number) => ({ '--i': n }) as CSSProperties;
 
-export default async function Page({ params, searchParams }: PageProps<'/[lang]/[page]'>) {
+export default async function Page({ params }: PageProps<'/[lang]/[page]'>) {
   const { lang, page } = await params;
   const r = resolve(lang, page);
   if (!r) notFound();
   const { t, key } = r;
-  const software = key === 'contact' ? (await searchParams).software : undefined;
 
   switch (key) {
     case 'ai': return <AiPage lang={r.lang} t={t} />;
     case 'communication': return <CommunicationPage lang={r.lang} t={t} />;
     case 'how': return <HowPage lang={r.lang} t={t} />;
     case 'about': return <AboutPage lang={r.lang} t={t} />;
-    case 'contact': return <ContactPage lang={r.lang} t={t} software={typeof software === 'string' ? software : undefined} />;
+    case 'contact': return <ContactPage lang={r.lang} t={t} />;
     case 'privacy': return <TextPage t={t} title={t.privacyPage.title} sections={t.privacyPage.sections} />;
     case 'cookies': return <TextPage t={t} title={t.cookiePage.title} sections={t.cookiePage.sections} />;
     case 'legal': return (
@@ -215,7 +214,7 @@ function AboutPage({ lang, t }: P) {
   );
 }
 
-function ContactPage({ lang, t, software }: P & { software?: string }) {
+function ContactPage({ lang, t }: P) {
   const c = t.contactPage;
   return (
     <>
@@ -223,7 +222,7 @@ function ContactPage({ lang, t, software }: P & { software?: string }) {
       <section className="wrap section-tight contact-grid">
         <div className="contact-form">
           <h2 className="h-small">{c.form.title}</h2>
-          <ContactForm f={c.form} lang={lang} privacyHref={href(lang, 'privacy')} software={software} />
+          <ContactForm f={c.form} lang={lang} privacyHref={href(lang, 'privacy')} />
         </div>
         <aside className="contact-side">
           <div>

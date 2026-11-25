@@ -14,6 +14,10 @@ export default function Header({ lang, nav, cta }: { lang: Locale; nav: Dict['na
   const [open, setOpen] = useState(false);
 
   useEffect(() => setOpen(false), [path]);
+  // Remembers the language so the root redirect skips browser detection on later visits.
+  useEffect(() => {
+    document.cookie = `lang=${lang}; max-age=31536000; path=/; samesite=lax`;
+  }, [lang]);
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);

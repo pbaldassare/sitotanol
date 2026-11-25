@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+export const dynamic = 'force-static';
 import { href, locales, products, type RouteKey } from '@/lib/i18n';
 
 const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';

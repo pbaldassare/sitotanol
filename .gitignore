@@ -9,3 +9,5 @@ next-env.d.ts
 .impeccable/mocks/
 .impeccable/review/
 .impeccable/config.local.json
+
+/dist/
