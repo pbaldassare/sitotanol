@@ -35,18 +35,18 @@ const cs: Dict = {
   cta: { primary: 'Rezervovat hovor', secondary: 'Prohlédnout software' },
   hero: {
     title: 'Software, který už funguje. Umělá inteligence, která zůstane ve vaší firmě.',
-    subtitle: 'TANOL Media vyvíjí software, učí firmy pracovat s AI a stará se o komunikaci.',
+    subtitle: 'Jsme TANOL Media. Vyvíjíme software, který existuje a funguje, přinášíme umělou inteligenci do firem a pomáháme jim dobře vyprávět jejich příběh.',
     indexCaption: 'Devět hotových softwarů',
     indexAll: 'Veškerý software',
   },
   pillars: [
-    { title: 'Software', text: 'Hotový software přizpůsobený vašemu způsobu práce.' },
-    { title: 'AI pro firmy', text: 'AI nainstalovaná a vysvětlená, data zůstávají ve firmě.' },
-    { title: 'Komunikace', text: 'Komunikace, která jasně vysvětlí, co děláte.' },
+    { title: 'Software', text: 'Hotové produkty, které přizpůsobíme tomu, jak pracujete vy. Ne naopak.' },
+    { title: 'AI pro firmy', text: 'Nainstalujeme ji u vás a naučíme ji vaše lidi používat. Data zůstanou doma.' },
+    { title: 'Komunikace', text: 'Slova a obrazy, ze kterých je hned jasné, co děláte a proč si vybrat právě vás.' },
   ],
   ai: {
     title: 'AI má smysl, jen když ji používají všichni.',
-    lead: 'Nainstalujeme ji, naučíme ji používat a vaše data zůstanou vaše.',
+    lead: 'Proto ji jen neinstalujeme: učíme s ní pracovat lidi, se kterými pracujete, krok za krokem. A vaše data nikdy neopustí firmu.',
     boundary: 'Vaše firma · vaše servery',
     sourcesLabel: 'Dokumenty a systémy, které už používáte',
     sources: ['Smlouvy', 'ERP systém', 'Interní postupy'],
@@ -54,26 +54,26 @@ const cs: Dict = {
     question: 'Do kdy musíme vypovědět servisní smlouvu?',
     answer: 'Nejpozději 60 dní před koncem platnosti, doporučeným e-mailem.',
     citation: 'Servisní smlouva, čl. 12',
-    outside: 'Nic neodchází ven: ani kvůli odpovědi, ani kvůli tréninku.',
+    outside: 'Všechno se děje tady uvnitř: žádná data neodcházejí ven, ani kvůli odpovědi, ani kvůli tréninku modelu.',
     offers: [
       {
         title: 'Interní AI',
         points: [
           'Otevřený model na vašich serverech nebo v privátním cloudu.',
           'Napojený na dokumenty a systémy, které už používáte.',
-          'Každá odpověď uvádí zdrojový dokument a respektuje stávající oprávnění.',
+          'Každá odpověď řekne, z jakého dokumentu vychází, takže si ji můžete vždy ověřit.',
         ],
       },
       {
         title: 'Školení AI',
         points: [
-          'Kurzy pro zaměstnance i vedení: každodenní práce, interní pravidla, rizika.',
-          'AI Act a GDPR vysvětlené prakticky.',
+          'Kurzy pro ty, kdo s ní pracují každý den, i pro ty, kdo rozhodují: co umí, co neumí a na co si dát pozor.',
+          'AI Act a GDPR vysvětlené tak, jak bychom je vysvětlili kolegovi.',
           'Půldenní školení, modulární kurzy nebo práce přímo na místě.',
         ],
       },
     ],
-    stepsTitle: 'Jak začínáme',
+    stepsTitle: 'Jak spolu začneme',
     steps: [
       'Půldenní analýza',
       'Pilot v jednom oddělení',
@@ -84,8 +84,8 @@ const cs: Dict = {
     more: 'Více o AI pro firmy',
   },
   products: {
-    title: 'Devět softwarů, které už existují.',
-    lead: 'Vycházíme z hotových produktů. Přizpůsobíme je vaší práci, nebo postavíme nový.',
+    title: 'Devět softwarů, které už pracují.',
+    lead: 'Neprodáváme vám nápad, který teprve vznikne: tyto produkty už existují. Přizpůsobíme je vaší práci, nebo s vámi postavíme nový.',
     open: 'Detail',
     screensPlaceholder: 'Skutečné snímky obrazovek produktů',
     items: {
@@ -102,7 +102,7 @@ const cs: Dict = {
   },
   trust: {
     title: 'Evropská společnost se sídlem v Praze.',
-    lead: 'Údaje ověřitelné v obchodním rejstříku.',
+    lead: 'Skutečná firma se skutečnou adresou. Všechno, co tu čtete, najdete i v obchodním rejstříku.',
     company: [
       ['Obchodní firma', 'TANOL Media SE'],
       ['Právní forma', 'Evropská společnost (SE)'],
@@ -113,14 +113,14 @@ const cs: Dict = {
       ['Základní kapitál', '120 000 €, splaceno 100 %'],
     ],
     commitments: [
-      { title: 'Data zůstávají vaše', text: 'AI, kterou instalujeme, běží uvnitř firmy. Nic se neposílá externím službám a nic se netrénuje na vašich dokumentech.' },
-      { title: 'Pravidla vysvětlená, ne odříkaná', text: 'GDPR a AI Act převedené na konkrétní kroky, řečí porady, ne soudní síně.' },
+      { title: 'Data zůstávají vaše', text: 'AI, kterou instalujeme, pracuje uvnitř vaší firmy. Nic neposíláme externím službám a nikdo na vašich dokumentech netrénuje modely.' },
+      { title: 'Pravidla vysvětlená, ne odříkaná', text: 'Z GDPR a AI Actu uděláme seznam konkrétních kroků, vysvětlený jako na poradě, ne jako u soudu.' },
     ],
     casesPlaceholder: 'Klienti a případové studie, které lze uvést',
   },
   close: {
     title: 'Půl dne na zjištění, kde vám AI opravdu ušetří čas.',
-    text: 'Rezervujte si hovor a řekneme vám, zda a kde má smysl začít.',
+    text: 'Rezervujte si hovor: povíte nám, jak pracujete, a my vám na rovinu řekneme, zda a kde má smysl začít.',
   },
   footer: {
     how: 'Jak pracujeme',
@@ -152,7 +152,7 @@ const cs: Dict = {
     storePlaceholder: 'Odkazy na App Store a Google Play',
     linkPlaceholder: 'Adresa webu nebo ukázky',
     back: 'Veškerý software',
-    custom: 'Potřebujete něco podobného, ale jinak? Přizpůsobíme ho, nebo postavíme na míru.',
+    custom: 'Potřebujete něco podobného, ale trochu jinak? Pojďme si o tom promluvit: můžeme ho přizpůsobit, nebo postavit na míru.',
   },
   productDetails: {
     sofabis: {
@@ -209,7 +209,7 @@ const cs: Dict = {
     title: 'AI pro firmy',
     inhouse: {
       title: 'Interní AI',
-      text: 'Otevřený model nainstalovaný na firemních serverech nebo v privátním cloudu. Odpovídá na otázky zaměstnanců z dokumentů a systémů, které už používáte.',
+      text: 'Představte si kolegu, který přečetl všechny vaše dokumenty a odpoví během chvilky. Je to otevřený model nainstalovaný na vašich serverech nebo v privátním cloudu, který pracuje s dokumenty a systémy, jež už používáte.',
       points: [
         'Data neopouštějí firmu, ani při zpracování, ani při tréninku.',
         'Každá odpověď uvádí dokument, ze kterého vychází.',
@@ -220,7 +220,7 @@ const cs: Dict = {
     },
     training: {
       title: 'Školení AI',
-      text: 'Praktické kurzy pro zaměstnance i vedení: jak nástroje používat každý den, jaká interní pravidla si dát, jakým rizikům se vyhnout.',
+      text: 'Nástroj, který nikdo neumí používat, skončí v šuplíku. Proto pořádáme praktické kurzy pro ty, kdo pracují, i pro ty, kdo vedou: jak ji používat dobře, jaká pravidla si dát a na co si dát pozor.',
       formatsTitle: 'Formy',
       formats: ['Půldenní školení', 'Modulární kurzy', 'Práce přímo na místě'],
       placeholder: 'Program, délka, ceny a cílová skupina kurzů',
@@ -235,7 +235,7 @@ const cs: Dict = {
     ],
     rules: {
       title: 'AI Act a GDPR v praxi',
-      text: 'Evropské nařízení o AI zavádí povinnosti i pro firmy, které AI používají, počínaje školením zaměstnanců. Pomůžeme vám zjistit, které se vás týkají, spolu s pravidly GDPR pro data.',
+      text: 'Evropské nařízení o AI něco požaduje i po firmách, které AI používají, počínaje školením lidí. Pomůžeme vám zjistit, co se vaší firmy opravdu týká, spolu s pravidly GDPR pro data. Bez strašení.',
     },
   },
   communicationPage: {
@@ -244,11 +244,11 @@ const cs: Dict = {
       description: 'Značka, web, sociální sítě a kampaně pro firmy, které chtějí jasně vysvětlit, co dělají, bez žargonu.',
     },
     title: 'Komunikace',
-    lead: 'Komunikace, která jasně vysvětlí, co děláte. Nejdřív sdělení, potom kanál.',
+    lead: 'Spousta firem dělá skvělou práci a špatně o ní mluví. Začínáme tím, co chcete říct, a teprve potom vybíráme, kde a jak to říct.',
     services: [
-      { t: 'Značka', d: 'Název, logo a tón: kdo jste, řečeno srozumitelně.' },
-      { t: 'Web', d: 'Rychlé a čitelné stránky, které vedou ke kontaktu.' },
-      { t: 'Sociální sítě', d: 'Obsah s plánem a cílem.' },
+      { t: 'Značka', d: 'Název, logo a tón: kdo jste, řečeno tak, aby si to lidé zapamatovali.' },
+      { t: 'Web', d: 'Rychlé a přehledné stránky, po kterých vám lidé napíšou.' },
+      { t: 'Sociální sítě', d: 'Promyšlený obsah s plánem a důvodem, proč vzniká.' },
       { t: 'Kampaně', d: 'Reklamy a uvedení na trh s měřitelným cílem.' },
     ],
     casesTitle: 'Případové studie',
@@ -260,12 +260,12 @@ const cs: Dict = {
       description: 'Čtyři fáze, každá s výsledkem, který uvidíte dřív, než se přejde k další.',
     },
     title: 'Jak pracujeme',
-    lead: 'Čtyři fáze, každá s výsledkem, který uvidíte dřív, než se přejde k další.',
+    lead: 'Žádné skoky do neznáma: pracujeme ve čtyřech fázích a po každé uvidíte konkrétní výsledek, než se rozhodnete pokračovat.',
     steps: [
-      { t: 'Analýza', d: 'Posloucháme, jak pracujete, a hledáme, kde se ztrácí čas. Výsledkem je písemný návrh s prioritami.' },
-      { t: 'Pilot', d: 'Začneme v malém: jedno oddělení, jeden proces, jeden software. Když funguje, pokračujeme, když ne, opravíme ho.' },
+      { t: 'Analýza', d: 'Sedneme si s vámi, posloucháme, jak pracujete, a společně hledáme, kde se ztrácí čas. Odnesete si písemný návrh s jasnými prioritami.' },
+      { t: 'Pilot', d: 'Začneme v malém: jedno oddělení, jeden proces, jeden software. Když funguje, pokračujeme, a když něco nesedí, nejdřív to opravíme.' },
       { t: 'Vývoj', d: 'Přizpůsobíme některý z našich softwarů, nebo postavíme nový, napojený na to, co už používáte.' },
-      { t: 'Podpora', d: 'Zůstáváme i po spuštění: aktualizace, školení, nové funkce, když je potřebujete.' },
+      { t: 'Podpora', d: 'Po spuštění nezmizíme: zůstáváme kvůli aktualizacím, školení i novým funkcím, kdykoli je budete potřebovat.' },
     ],
   },
   aboutPage: {
@@ -274,7 +274,7 @@ const cs: Dict = {
       description: 'TANOL Media SE je evropská společnost se sídlem v Praze: vlastní software, umělá inteligence a komunikace pro firmy.',
     },
     title: 'O nás',
-    lead: 'TANOL Media SE je evropská společnost se sídlem v Praze. Je mateřskou společností devíti vlastních softwarů a týmu, který je přináší do firem, spolu s AI a komunikací.',
+    lead: 'TANOL Media SE je evropská společnost se sídlem v Praze. Jsme mateřskou společností devíti vlastních softwarů a týmu, který je přináší do firem, spolu s umělou inteligencí a komunikací. Rádi začínáme od skutečných problémů, ne od módních trendů.',
     teamTitle: 'Lidé',
     teamPlaceholder: 'Členové týmu a jejich role',
     dataTitle: 'Údaje o společnosti',
@@ -285,7 +285,7 @@ const cs: Dict = {
       description: 'Napište TANOL Media nebo si rezervujte hovor. Sídlo v Praze, Revoluční 1082/8.',
     },
     title: 'Kontakt',
-    lead: 'Napište nám pár řádků, nebo si rovnou rezervujte hovor.',
+    lead: 'Napište nám, na čem pracujete: stačí pár řádků. Pokud byste to raději probrali osobně, rezervujte si rovnou hovor.',
     form: {
       title: 'Napište nám',
       name: 'Jméno',
@@ -296,7 +296,7 @@ const cs: Dict = {
       privacy: 'Zásady ochrany osobních údajů',
       submit: 'Odeslat zprávu',
       sending: 'Odesílám…',
-      success: 'Zprávu máme. Odpovíme vám co nejdříve.',
+      success: 'Děkujeme! Vaši zprávu jsme dostali a odpovíme vám co nejdříve.',
       required: 'Toto pole je povinné.',
       invalidEmail: 'Zadejte platnou e-mailovou adresu, například jmeno@firma.cz.',
       consentRequired: 'Bez souhlasu vám nemůžeme odpovědět.',
@@ -337,7 +337,7 @@ const cs: Dict = {
   },
   notFound: {
     title: 'Stránka nenalezena.',
-    text: 'Tato adresa neexistuje nebo se změnila.',
+    text: 'Tahle stránka tu není, nebo se přestěhovala. Stává se to: začněme znovu od úvodní stránky.',
     back: 'Zpět na úvod',
   },
 };

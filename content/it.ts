@@ -32,18 +32,18 @@ const it = {
   cta: { primary: 'Prenota una call', secondary: 'Guarda i software' },
   hero: {
     title: 'Software che esistono già. Intelligenza artificiale che resta in casa tua.',
-    subtitle: 'TANOL Media sviluppa software, insegna l’IA alle aziende e cura la comunicazione.',
+    subtitle: 'Siamo TANOL Media. Costruiamo software che esistono e funzionano, portiamo l’intelligenza artificiale dentro le aziende e aiutiamo a raccontarle bene.',
     indexCaption: 'Nove software pronti',
     indexAll: 'Tutti i software',
   },
   pillars: [
-    { title: 'Software', text: 'Software pronti, adattabili al tuo modo di lavorare.' },
-    { title: 'IA per le aziende', text: 'IA installata e insegnata, con i dati in azienda.' },
-    { title: 'Comunicazione', text: 'Comunicazione che spiega bene cosa fai.' },
+    { title: 'Software', text: 'Prodotti già pronti, che adattiamo a come lavori tu. Non il contrario.' },
+    { title: 'IA per le aziende', text: 'La installiamo da voi e la insegniamo alle persone. I dati restano a casa.' },
+    { title: 'Comunicazione', text: 'Parole e immagini che fanno capire subito cosa fai e perché sceglierti.' },
   ],
   ai: {
     title: 'L’IA serve solo se la usano tutti.',
-    lead: 'La installiamo, la insegniamo, i tuoi dati restano tuoi.',
+    lead: 'Per questo non ci limitiamo a installarla: la insegniamo a chi lavora con te, un passo alla volta. E i tuoi dati non escono mai dall’azienda.',
     boundary: 'La tua azienda · i tuoi server',
     sourcesLabel: 'Documenti e gestionali già in uso',
     sources: ['Contratti', 'Gestionale', 'Procedure interne'],
@@ -51,26 +51,26 @@ const it = {
     question: 'Entro quando va mandata la disdetta del contratto di manutenzione?',
     answer: 'Entro 60 giorni dalla scadenza, via PEC.',
     citation: 'Contratto manutenzione, art. 12',
-    outside: 'Niente esce: né per rispondere, né per addestrare.',
+    outside: 'Tutto succede qui dentro: nessun dato esce, né per rispondere né per addestrare il modello.',
     offers: [
       {
         title: 'IA interna',
         points: [
           'Un modello aperto sui tuoi server o in un cloud privato.',
           'Collegato ai documenti e ai gestionali che usi già.',
-          'Ogni risposta cita il documento di origine, con i permessi che esistono già.',
+          'Ogni risposta ti dice da quale documento arriva, così puoi sempre controllare.',
         ],
       },
       {
         title: 'Formazione sull’IA',
         points: [
-          'Corsi per dipendenti e dirigenti: uso quotidiano, regole interne, rischi.',
-          'AI Act e GDPR spiegati in modo pratico.',
+          'Corsi per chi la usa ogni giorno e per chi deve decidere: cosa fa, cosa non fa, dove stare attenti.',
+          'AI Act e GDPR spiegati come li spiegheremmo a un collega.',
           'Mezza giornata, percorsi a moduli o affiancamento sul campo.',
         ],
       },
     ],
-    stepsTitle: 'Come si parte',
+    stepsTitle: 'Come iniziamo insieme',
     steps: [
       'Mezza giornata di analisi',
       'Pilota su un reparto',
@@ -81,8 +81,8 @@ const it = {
     more: 'Scopri l’IA per le aziende',
   },
   products: {
-    title: 'Nove software, già scritti.',
-    lead: 'Partiamo da prodotti che esistono. Li adattiamo al tuo lavoro, o ne costruiamo uno nuovo.',
+    title: 'Nove software, già al lavoro.',
+    lead: 'Non ti vendiamo un’idea da costruire: questi prodotti esistono già. Li adattiamo al tuo lavoro o, se serve, ne costruiamo uno nuovo insieme a te.',
     open: 'Scheda',
     screensPlaceholder: 'Schermate reali dei prodotti',
     items: {
@@ -99,7 +99,7 @@ const it = {
   },
   trust: {
     title: 'Una società europea, con sede a Praga.',
-    lead: 'Dati verificabili nel registro delle imprese ceco.',
+    lead: 'Una società vera, con un indirizzo vero. Tutto quello che leggi qui lo trovi anche nel registro delle imprese ceco.',
     company: [
       ['Denominazione', 'TANOL Media SE'],
       ['Forma giuridica', 'Società europea (SE)'],
@@ -110,14 +110,14 @@ const it = {
       ['Capitale sociale', '120.000 €, versato al 100%'],
     ],
     commitments: [
-      { title: 'I dati restano tuoi', text: 'L’IA che installiamo lavora dentro l’azienda. Niente invii a servizi esterni, niente addestramento sui tuoi documenti.' },
-      { title: 'Regole spiegate, non recitate', text: 'GDPR e AI Act tradotti in cose da fare, con un linguaggio da riunione, non da tribunale.' },
+      { title: 'I dati restano tuoi', text: 'L’IA che installiamo lavora dentro la tua azienda. Non mandiamo niente a servizi esterni e nessuno addestra modelli sui tuoi documenti.' },
+      { title: 'Regole spiegate, non recitate', text: 'GDPR e AI Act diventano una lista di cose da fare, raccontate come in una riunione, non come in un’aula di tribunale.' },
     ],
     casesPlaceholder: 'Clienti e casi citabili',
   },
   close: {
     title: 'Mezza giornata per capire dove l’IA ti fa risparmiare ore davvero.',
-    text: 'Prenota una call: ti diciamo se e da dove ha senso partire.',
+    text: 'Prenota una call: ci racconti come lavorate e ti diciamo, senza giri di parole, se e da dove ha senso partire.',
   },
   footer: {
     how: 'Come lavoriamo',
@@ -149,7 +149,7 @@ const it = {
     storePlaceholder: 'Link App Store e Google Play',
     linkPlaceholder: 'Indirizzo del sito o della demo',
     back: 'Tutti i software',
-    custom: 'Ti serve qualcosa di simile ma diverso? Lo adattiamo o lo costruiamo su misura.',
+    custom: 'Ti serve qualcosa di simile, ma non proprio così? Parliamone: possiamo adattarlo o costruirlo su misura per te.',
   },
   productDetails: {
     sofabis: {
@@ -206,7 +206,7 @@ const it = {
     title: 'IA per le aziende',
     inhouse: {
       title: 'IA interna',
-      text: 'Un modello aperto installato sui server dell’azienda o in un cloud privato. Risponde alle domande dei dipendenti partendo dai documenti e dai gestionali che usate già.',
+      text: 'Immagina un collega che ha letto tutti i vostri documenti e risponde in un attimo. È un modello aperto, installato sui vostri server o in un cloud privato, che lavora con i documenti e i gestionali che usate già.',
       points: [
         'I dati non escono dall’azienda, né per l’elaborazione né per l’addestramento.',
         'Ogni risposta cita il documento da cui viene.',
@@ -217,7 +217,7 @@ const it = {
     },
     training: {
       title: 'Formazione sull’IA',
-      text: 'Corsi pratici per dipendenti e dirigenti: come usare gli strumenti ogni giorno, quali regole interne darsi, quali rischi evitare.',
+      text: 'Uno strumento che nessuno sa usare resta nel cassetto. Per questo facciamo corsi pratici, per chi lavora ogni giorno e per chi dirige: come usarla bene, quali regole darsi, dove stare attenti.',
       formatsTitle: 'Formati',
       formats: ['Mezza giornata', 'Percorsi a moduli', 'Affiancamento sul campo'],
       placeholder: 'Programma, durata, prezzi e pubblico dei corsi',
@@ -232,7 +232,7 @@ const it = {
     ],
     rules: {
       title: 'AI Act e GDPR, in pratica',
-      text: 'Il regolamento europeo sull’IA introduce obblighi anche per chi la usa, a partire dalla formazione del personale. Ti aiutiamo a capire quali ti riguardano, insieme alle regole del GDPR sui dati.',
+      text: 'Il regolamento europeo sull’IA chiede qualcosa anche a chi la usa, a partire dalla formazione delle persone. Ti aiutiamo a capire cosa riguarda davvero la tua azienda, insieme alle regole del GDPR sui dati. Senza allarmismi.',
     },
   },
   communicationPage: {
@@ -241,11 +241,11 @@ const it = {
       description: 'Marca, sito, social e campagne per aziende che vogliono spiegare bene cosa fanno, senza gergo.',
     },
     title: 'Comunicazione',
-    lead: 'Comunicazione che spiega bene cosa fai. Prima il messaggio, poi il mezzo.',
+    lead: 'Spesso un’azienda fa cose ottime e le racconta male. Partiamo da quello che vuoi dire, poi scegliamo dove e come dirlo.',
     services: [
-      { t: 'Marca', d: 'Nome, logo e tono di voce: chi sei, detto in modo chiaro.' },
-      { t: 'Sito', d: 'Pagine veloci e leggibili che portano a un contatto.' },
-      { t: 'Social', d: 'Contenuti con un calendario e un obiettivo.' },
+      { t: 'Marca', d: 'Nome, logo e tono di voce: chi sei, detto in modo che si ricordi.' },
+      { t: 'Sito', d: 'Pagine veloci e chiare, che portano le persone a scriverti.' },
+      { t: 'Social', d: 'Contenuti pensati, con un calendario e un motivo per esistere.' },
       { t: 'Campagne', d: 'Annunci e lanci con un obiettivo misurabile.' },
     ],
     casesTitle: 'Casi',
@@ -257,12 +257,12 @@ const it = {
       description: 'Quattro fasi, ognuna con un risultato da vedere prima di passare alla successiva.',
     },
     title: 'Come lavoriamo',
-    lead: 'Quattro fasi, ognuna con un risultato da vedere prima di passare alla successiva.',
+    lead: 'Niente salti nel buio: lavoriamo in quattro fasi, e a ogni fase vedi un risultato concreto prima di decidere se andare avanti.',
     steps: [
-      { t: 'Analisi', d: 'Ascoltiamo come lavorate e troviamo dove si perde tempo. Ne esce una proposta scritta, con priorità.' },
-      { t: 'Pilota', d: 'Partiamo in piccolo: un reparto, un processo, un software. Se funziona si va avanti, se no si corregge.' },
+      { t: 'Analisi', d: 'Ci sediamo con voi, ascoltiamo come lavorate e cerchiamo insieme dove si perde tempo. Alla fine hai una proposta scritta, con le priorità.' },
+      { t: 'Pilota', d: 'Partiamo in piccolo: un reparto, un processo, un software. Se funziona si va avanti, se qualcosa non torna lo sistemiamo prima.' },
       { t: 'Sviluppo', d: 'Adattiamo un nostro software o ne costruiamo uno nuovo, integrato con quello che usate già.' },
-      { t: 'Assistenza', d: 'Restiamo dopo il lancio: aggiornamenti, formazione, nuove funzioni quando servono.' },
+      { t: 'Assistenza', d: 'Non spariamo dopo il lancio: restiamo per aggiornamenti, formazione e nuove funzioni quando ne hai bisogno.' },
     ],
   },
   aboutPage: {
@@ -271,7 +271,7 @@ const it = {
       description: 'TANOL Media SE è una società europea con sede a Praga: software proprietari, intelligenza artificiale e comunicazione per le aziende.',
     },
     title: 'Chi siamo',
-    lead: 'TANOL Media SE è una società europea con sede a Praga. È la casa madre di nove software proprietari e del team che li porta nelle aziende, insieme all’IA e alla comunicazione.',
+    lead: 'TANOL Media SE è una società europea con sede a Praga. Siamo la casa madre di nove software nostri e del team che li porta nelle aziende, insieme all’intelligenza artificiale e alla comunicazione. Ci piace partire dai problemi veri, non dalle mode.',
     teamTitle: 'Le persone',
     teamPlaceholder: 'Persone e ruoli del team',
     dataTitle: 'Dati societari',
@@ -282,7 +282,7 @@ const it = {
       description: 'Scrivi a TANOL Media o prenota una call. Sede a Praga, Revoluční 1082/8.',
     },
     title: 'Contatti',
-    lead: 'Scrivici due righe o prenota direttamente una call.',
+    lead: 'Raccontaci a cosa stai lavorando: bastano due righe. Se preferisci parlarne a voce, prenota direttamente una call.',
     form: {
       title: 'Scrivici',
       name: 'Nome',
@@ -293,7 +293,7 @@ const it = {
       privacy: 'Leggi l’informativa privacy',
       submit: 'Invia il messaggio',
       sending: 'Invio in corso…',
-      success: 'Messaggio ricevuto. Ti rispondiamo appena possibile.',
+      success: 'Grazie! Abbiamo ricevuto il tuo messaggio e ti rispondiamo appena possibile.',
       required: 'Campo obbligatorio.',
       invalidEmail: 'Inserisci un indirizzo email valido, per esempio nome@azienda.it.',
       consentRequired: 'Serve il consenso per poterti rispondere.',
@@ -334,7 +334,7 @@ const it = {
   },
   notFound: {
     title: 'Pagina non trovata.',
-    text: 'L’indirizzo non esiste o è cambiato.',
+    text: 'Questa pagina non c’è, o ha cambiato indirizzo. Capita: ripartiamo dalla home.',
     back: 'Torna alla home',
   },
 };

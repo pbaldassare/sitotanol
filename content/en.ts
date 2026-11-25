@@ -34,18 +34,18 @@ const en: Dict = {
   cta: { primary: 'Book a call', secondary: 'See the software' },
   hero: {
     title: 'Software that already exists. AI that stays in-house.',
-    subtitle: 'TANOL Media builds software, teaches AI to companies and runs communication.',
+    subtitle: 'We’re TANOL Media. We build software that exists and works, bring artificial intelligence into companies, and help them tell their story well.',
     indexCaption: 'Nine products, ready to use',
     indexAll: 'All software',
   },
   pillars: [
-    { title: 'Software', text: 'Ready-made software, adapted to how you work.' },
-    { title: 'AI for business', text: 'AI installed and taught, with your data kept in-house.' },
-    { title: 'Communication', text: 'Communication that explains what you do.' },
+    { title: 'Software', text: 'Products that are ready to go, shaped around how you work. Not the other way round.' },
+    { title: 'AI for business', text: 'We set it up on your side and teach your people to use it. Your data stays home.' },
+    { title: 'Communication', text: 'Words and images that make it clear what you do, and why people should pick you.' },
   ],
   ai: {
     title: 'AI only pays off when everyone uses it.',
-    lead: 'We install it, we teach it, and your data stays yours.',
+    lead: 'That’s why we don’t just install it: we teach it to the people you work with, one step at a time. And your data never leaves the company.',
     boundary: 'Your company · your servers',
     sourcesLabel: 'Documents and systems you already use',
     sources: ['Contracts', 'ERP', 'Internal procedures'],
@@ -53,26 +53,26 @@ const en: Dict = {
     question: 'When do we have to cancel the maintenance contract?',
     answer: 'At least 60 days before it expires, by registered email.',
     citation: 'Maintenance contract, art. 12',
-    outside: 'Nothing leaves: not to answer, not to train.',
+    outside: 'Everything happens in here: no data leaves, not to answer questions and not to train the model.',
     offers: [
       {
         title: 'In-house AI',
         points: [
           'An open model on your servers or in a private cloud.',
           'Connected to the documents and systems you already use.',
-          'Every answer cites its source document and respects existing permissions.',
+          'Every answer tells you which document it came from, so you can always check.',
         ],
       },
       {
         title: 'AI training',
         points: [
-          'Courses for staff and managers: daily use, internal rules, risks.',
-          'The AI Act and GDPR, explained in practical terms.',
+          'Courses for the people who use it every day and the people who decide: what it does, what it doesn’t, where to be careful.',
+          'The AI Act and GDPR, explained the way we’d explain them to a colleague.',
           'Half-day sessions, modular programmes or on-the-job coaching.',
         ],
       },
     ],
-    stepsTitle: 'How we start',
+    stepsTitle: 'How we get started together',
     steps: [
       'Half-day assessment',
       'Pilot in one department',
@@ -83,8 +83,8 @@ const en: Dict = {
     more: 'Explore AI for business',
   },
   products: {
-    title: 'Nine products, already built.',
-    lead: 'We start from software that exists. We adapt it to your work, or build something new.',
+    title: 'Nine products, already at work.',
+    lead: 'We’re not selling you an idea we still have to build: these products already exist. We adapt them to your work or, if it makes sense, build something new with you.',
     open: 'Details',
     screensPlaceholder: 'Real product screenshots',
     items: {
@@ -101,7 +101,7 @@ const en: Dict = {
   },
   trust: {
     title: 'A European company based in Prague.',
-    lead: 'Details you can check in the Czech commercial register.',
+    lead: 'A real company with a real address. Everything you read here is also in the Czech commercial register.',
     company: [
       ['Company name', 'TANOL Media SE'],
       ['Legal form', 'European company (SE)'],
@@ -112,14 +112,14 @@ const en: Dict = {
       ['Share capital', '€120,000, fully paid'],
     ],
     commitments: [
-      { title: 'Your data stays yours', text: 'The AI we install runs inside your company. Nothing is sent to outside services, and nothing is trained on your documents.' },
-      { title: 'Rules explained, not recited', text: 'GDPR and the AI Act turned into things to do, in meeting-room language rather than legalese.' },
+      { title: 'Your data stays yours', text: 'The AI we install works inside your company. We send nothing to outside services, and nobody trains models on your documents.' },
+      { title: 'Rules explained, not recited', text: 'GDPR and the AI Act become a list of things to do, told the way you’d say it in a meeting, not in a courtroom.' },
     ],
     casesPlaceholder: 'Clients and case studies we can name',
   },
   close: {
     title: 'Half a day to see where AI really saves you time.',
-    text: 'Book a call and we will tell you whether, and where, it makes sense to start.',
+    text: 'Book a call: tell us how you work and we’ll tell you straight whether, and where, it makes sense to start.',
   },
   footer: {
     how: 'How we work',
@@ -151,7 +151,7 @@ const en: Dict = {
     storePlaceholder: 'App Store and Google Play links',
     linkPlaceholder: 'Website or demo address',
     back: 'All software',
-    custom: 'Need something similar but different? We adapt it or build it for you.',
+    custom: 'Need something like this, but not quite? Let’s talk: we can adapt it or build one just for you.',
   },
   productDetails: {
     sofabis: {
@@ -208,7 +208,7 @@ const en: Dict = {
     title: 'AI for business',
     inhouse: {
       title: 'In-house AI',
-      text: 'An open model installed on your company servers or in a private cloud. It answers staff questions from the documents and systems you already use.',
+      text: 'Picture a colleague who has read every one of your documents and answers in seconds. It’s an open model, installed on your servers or in a private cloud, working with the documents and systems you already use.',
       points: [
         'Data never leaves the company, neither for processing nor for training.',
         'Every answer cites the document it comes from.',
@@ -219,7 +219,7 @@ const en: Dict = {
     },
     training: {
       title: 'AI training',
-      text: 'Practical courses for staff and managers: how to use the tools every day, which internal rules to set, which risks to avoid.',
+      text: 'A tool nobody knows how to use ends up in a drawer. So we run practical courses for the people doing the work and the people leading it: how to use it well, which rules to set, where to be careful.',
       formatsTitle: 'Formats',
       formats: ['Half-day session', 'Modular programmes', 'On-the-job coaching'],
       placeholder: 'Course programme, length, prices and audience',
@@ -234,7 +234,7 @@ const en: Dict = {
     ],
     rules: {
       title: 'The AI Act and GDPR, in practice',
-      text: 'The EU AI regulation also sets obligations for companies that use AI, starting with staff training. We help you work out which ones apply to you, together with the GDPR rules on data.',
+      text: 'The EU AI regulation asks something of companies that use AI too, starting with training their people. We help you work out what actually applies to you, together with the GDPR rules on data. No scaremongering.',
     },
   },
   communicationPage: {
@@ -243,11 +243,11 @@ const en: Dict = {
       description: 'Brand, website, social media and campaigns for companies that want to explain clearly what they do, without jargon.',
     },
     title: 'Communication',
-    lead: 'Communication that explains what you do. The message first, then the medium.',
+    lead: 'Plenty of companies do great work and explain it badly. We start from what you want to say, then choose where and how to say it.',
     services: [
-      { t: 'Brand', d: 'Name, logo and tone of voice: who you are, said clearly.' },
-      { t: 'Website', d: 'Fast, readable pages that lead to a conversation.' },
-      { t: 'Social media', d: 'Content with a calendar and a goal.' },
+      { t: 'Brand', d: 'Name, logo and tone of voice: who you are, said in a way people remember.' },
+      { t: 'Website', d: 'Fast, clear pages that get people to write to you.' },
+      { t: 'Social media', d: 'Thought-through content, with a calendar and a reason to exist.' },
       { t: 'Campaigns', d: 'Ads and launches with a measurable goal.' },
     ],
     casesTitle: 'Case studies',
@@ -259,12 +259,12 @@ const en: Dict = {
       description: 'Four phases, each with a result you can see before moving to the next.',
     },
     title: 'How we work',
-    lead: 'Four phases, each with a result you can see before moving to the next.',
+    lead: 'No leaps in the dark: we work in four phases, and after each one you see something concrete before deciding to go on.',
     steps: [
-      { t: 'Assessment', d: 'We listen to how you work and find where time is lost. You get a written proposal with priorities.' },
-      { t: 'Pilot', d: 'We start small: one department, one process, one product. If it works we continue; if not, we correct it.' },
+      { t: 'Assessment', d: 'We sit down with you, listen to how you work and look together for where time gets lost. You come away with a written proposal and clear priorities.' },
+      { t: 'Pilot', d: 'We start small: one department, one process, one product. If it works we carry on; if something’s off, we fix it first.' },
       { t: 'Build', d: 'We adapt one of our products or build a new one, integrated with what you already use.' },
-      { t: 'Support', d: 'We stay after launch: updates, training, new features when you need them.' },
+      { t: 'Support', d: 'We don’t vanish after launch: we stay for updates, training and new features whenever you need them.' },
     ],
   },
   aboutPage: {
@@ -273,7 +273,7 @@ const en: Dict = {
       description: 'TANOL Media SE is a European company based in Prague: proprietary software, artificial intelligence and communication for businesses.',
     },
     title: 'About us',
-    lead: 'TANOL Media SE is a European company based in Prague. It is the parent company of nine proprietary software products and of the team that brings them into companies, along with AI and communication.',
+    lead: 'TANOL Media SE is a European company based in Prague. We’re the parent company of nine software products of our own, and of the team that brings them into companies, along with AI and communication. We like starting from real problems, not trends.',
     teamTitle: 'The people',
     teamPlaceholder: 'Team members and roles',
     dataTitle: 'Company details',
@@ -284,7 +284,7 @@ const en: Dict = {
       description: 'Write to TANOL Media or book a call. Office in Prague, Revoluční 1082/8.',
     },
     title: 'Contact',
-    lead: 'Drop us a line or book a call straight away.',
+    lead: 'Tell us what you’re working on: a couple of lines is plenty. If you’d rather talk, book a call straight away.',
     form: {
       title: 'Write to us',
       name: 'Name',
@@ -295,7 +295,7 @@ const en: Dict = {
       privacy: 'Read the privacy notice',
       submit: 'Send message',
       sending: 'Sending…',
-      success: 'Message received. We will get back to you as soon as we can.',
+      success: 'Thank you! We’ve got your message and will get back to you as soon as we can.',
       required: 'This field is required.',
       invalidEmail: 'Enter a valid email address, for example name@company.com.',
       consentRequired: 'We need your consent to reply.',
@@ -336,7 +336,7 @@ const en: Dict = {
   },
   notFound: {
     title: 'Page not found.',
-    text: 'This address does not exist or has changed.',
+    text: 'This page isn’t here, or it has moved. It happens: let’s start again from the home page.',
     back: 'Back to home',
   },
 };
